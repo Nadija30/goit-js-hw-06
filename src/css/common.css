@@ -25,3 +25,21 @@ button {
 .item {
     list-style: none;
 }
+
+ul {
+  list-style: none;
+
+}
+.gallery {
+display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+ .gallery-description {
+   flex-basis: calc((100% - 48px) / 3);
+ }
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+} 
