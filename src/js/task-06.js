@@ -1,13 +1,14 @@
 const input = document.querySelector('#validation-input')
 console.log(input)
-input.addEventListener('input', onInput)
-input.addEventListener("blur",  )
+input.addEventListener('blur', onInput)
 
 function onInput(evt) {
-    if (evt.currentTarget.value === input.getAttribute('data-length')) {
-        input.classList.add('#validation-input.valid');
+    if (evt.currentTarget.value.length === Number(input.getAttribute('data-length'))) {
+        input.classList.remove('validation-input');
+       input.classList.add('valid');
     } else {
-        input.classList.add('#validation-input.invalid')
+        input.classList.remove('valid')
+        input.classList.add('invalid')
     }
 }
 // textInput.addEventListener("focus", () => {
