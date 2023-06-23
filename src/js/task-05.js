@@ -4,7 +4,11 @@ const span = document.querySelector('#name-output')
 //console.log(input)
 input.addEventListener('input', onInputChange)
 function onInputChange(evt) {
-   span.textContent = evt.currentTarget.value
+    if (evt.currentTarget.value) {
+     span.textContent = evt.currentTarget.value   
+    } else {
+        span.textContent = "Anonymous"
+    }
     console.log(evt.currentTarget.value)
-    console.log( span.textContent)
+    console.log(span.textContent)
 }
