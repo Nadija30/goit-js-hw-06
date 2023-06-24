@@ -4,7 +4,7 @@ input.addEventListener('blur', onInput)
 
 function onInput(evt) {
     if (evt.currentTarget.value.length === Number(input.getAttribute('data-length'))) {
-        input.classList.remove('validation-input');
+        input.classList.remove('invalid');
        input.classList.add('valid');
     } else {
         input.classList.remove('valid')
