@@ -5,9 +5,9 @@ const profile = {};
 function onSubmit(evt) {
     evt.preventDefault();
     console.log(evt.currentTarget.elements.email)
-    const email = evt.currentTarget.elements.email;
-    const password = evt.currentTarget.elements.password;
-    
+    //const email = evt.currentTarget.elements.email;
+    //const password = evt.currentTarget.elements.password;
+    const {email, password} = evt.currentTarget.elements;
     if (email.value === "" || password === "") {
         alert('Please fill in all the fields!');
     } else {
@@ -16,7 +16,5 @@ function onSubmit(evt) {
         console.log(profile)
     }
     evt.currentTarget.reset();
-    //const {email, password} = evt.currentTarget.element;
-    //console.log(email)
-    //console.log(password)
+   
 }

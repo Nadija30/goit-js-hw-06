@@ -1,10 +1,12 @@
-const input = document.querySelector('#font-size-control')
-input.addEventListener('input', onInput)
-//console.log(input)
-const span = document.querySelector('#text')
-console.dir(span.textContent)
+document.querySelector('body').style.backgroundColor = '#eaf1fad0';
+const input = document.getElementById('font-size-control')
+const span = document.getElementById('text')
 
-function onInput(evt) {
-span.style.fontSize = evt.currentTarget.value + "px";
+const fontSizeControl = ({ currentTarget }) =>
+  (span.style.fontSize = `${currentTarget.value}px`);
 
-}
+input.addEventListener('input', fontSizeControl);
+
+
+
+

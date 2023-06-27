@@ -17,10 +17,10 @@ let counterValue = 0;
 function onClickDecrement(evt) {
     counterValue -= 1;
     span.textContent = `${counterValue}`;
-   console.log(evt.currentTarget.value) 
+//console.log(evt.currentTarget.value) 
 }
 function onClickIcrement(evt) {
     counterValue += 1;
     span.textContent = `${counterValue}`;
-    console.log(evt.currentTarget);
+    //console.log(evt.currentTarget);
 }
